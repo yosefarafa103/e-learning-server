@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "nodemon ./src/index.js",
-		"build": "tsc"
+		"build": "echo 'nothing to build'"
 	},
 	"type": "module",
 	"devDependencies": {
