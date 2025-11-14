@@ -1,12 +1,17 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import cors from "cors";
 import { connectSocket } from "./io/socket.js";
-import mongoose from "mongoose";
 import connectDB from "./lib/db.js";
+// Routes
+import subscriptionRoutes from "./routes/subscriptionRoutes.js";
 const app = express();
 const PORT = 5000;
 app.use(express.json());
 app.use(cors());
+
+app.use("/subscribe", subscriptionRoutes);
 app.get("/", (req, res) => {
   res.send("🚀 Express + TypeScript server is rusnning!");
 });

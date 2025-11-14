@@ -17,12 +17,16 @@
 	"dependencies": {
 		"@types/mongodb": "^4.0.7",
 		"@types/mongoose": "^5.11.97",
+		"@types/stripe": "^8.0.417",
+		"axios": "^1.13.2",
 		"concurrently": "^9.2.1",
 		"cors": "^2.8.5",
+		"dotenv": "^17.2.3",
 		"helmet": "^8.1.0",
 		"mongodb": "^6.20.0",
 		"mongoose": "^8.19.3",
 		"socket.io": "^4.8.1",
+		"stripe": "^19.3.1",
 		"ts-node": "^10.9.2",
 		"tsx": "^4.20.6"
 	}
