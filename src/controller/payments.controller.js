@@ -4,7 +4,7 @@ export const createNewSubscription = async (priceId, userId, plan) => {
     const subscription = await new Stripe(process.env.STRIPE_SECRET, {
       apiVersion: "2025-10-29.clover",
     }).checkout.sessions.create({
-      success_url: "http://localhost:3000/pricing",
+      success_url: "https://taskify-five-psi.vercel.app/pricing",
       line_items: [
         {
           price: priceId,
