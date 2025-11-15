@@ -6,12 +6,15 @@ import { connectSocket } from "./io/socket.js";
 import connectDB from "./lib/db.js";
 // Routes
 import subscriptionRoutes from "./routes/subscriptionRoutes.js";
+import webHookRoutes from "./routes/webhookRoutes.js";
 const app = express();
 const PORT = 5000;
+
+// Middlewares
 app.use(express.json());
 app.use(cors());
-
 app.use("/subscribe", subscriptionRoutes);
+app.use("/webhook", webHookRoutes);
 app.get("/", (req, res) => {
   res.send("🚀 Express + TypeScript server is rusnning!");
 });

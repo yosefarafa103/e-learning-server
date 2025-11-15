@@ -19,6 +19,7 @@
 		"@types/mongoose": "^5.11.97",
 		"@types/stripe": "^8.0.417",
 		"axios": "^1.13.2",
+		"body-parser": "^2.2.0",
 		"concurrently": "^9.2.1",
 		"cors": "^2.8.5",
 		"dotenv": "^17.2.3",
